@@ -35,7 +35,22 @@ function countWords(str) {
     let words = str.split(/\s+/);
 
 
+  function countWordsManual(words) {
+  let result = {};
+
+  for (let i = 0; i < words.length; i++) {
+    let w = words[i];
+
+    if (result[w] === undefined) {
+      result[w] = 1;
+    } else {
+      result[w] += 1;
+    }
+  }
+
   return result;
+}
+
 }
 
 
