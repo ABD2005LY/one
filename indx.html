@@ -9,6 +9,28 @@
     <h1>Hello, World!</h1>
     <p>This is a sample HTML document.</p>
     <script>
+// Exercise 1 – Sum of Array Elements
+function sumArray(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum;
+}
+
+        // Exercise 2 – Filter Names by Length
+        function longNames(names) {
+  return names.filter(name => name.length > 4);
+}
+        const names = ["A", "S", "O", "L", "M"];
+console.log(longNames(names));
+
+
+
+
+        // هExercise 3 – Word Frequency Counter
 function removeSpaces(str) {
     let start =0;
     let end = str.length -1;
